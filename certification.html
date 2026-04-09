@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>成果鉴定及应用证明 - 甘肃交通职业技术学院</title>
+    <script src="js/main.js"></script>
+    <link href="css/css.css" rel="stylesheet">
+    <style>
+        .breadcrumbs {
+            background-color: #f5f5f5;
+            padding: 10px 20px;
+            font-size: 14px;
+            color: #666;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .breadcrumbs a {
+            color: #003366;
+            text-decoration: none;
+        }
+        
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+        
+        .certification-container {
+            display: flex;
+            max-width: 1200px;
+            margin: 150px auto 20px;
+            padding: 0 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            min-height: 600px;
+        }
+        
+        .left-sidebar {
+            width: 250px;
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            border-radius: 8px 0 0 8px;
+        }
+        
+        .sidebar-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .sidebar-menu {
+            list-style: none;
+        }
+        
+        .sidebar-menu li {
+            margin-bottom: 10px;
+        }
+        
+        .sidebar-menu li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        .sidebar-menu li a:hover,
+        .sidebar-menu li a.active {
+            background-color: #004080;
+        }
+        
+        .content-area {
+            flex: 1;
+            padding: 30px;
+            overflow-y: auto;
+        }
+        
+        .certificate-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #003366;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        /* PDF查看器 */
+        .pdf-viewer {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .pdf-toolbar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .toolbar-btn {
+            width: 30px;
+            height: 30px;
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .toolbar-btn:hover {
+            background-color: #e0e0e0;
+        }
+        
+        .page-info {
+            font-size: 14px;
+            color: #666;
+            margin-left: auto;
+        }
+        
+        .pdf-container {
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        #pdfFrame {
+            transition: all 0.3s ease;
+        }
+        
+        .certificate-content {
+            margin-top: 20px;
+            line-height: 1.8;
+        }
+        
+        .certificate-content p {
+            margin-bottom: 15px;
+            text-indent: 2em;
+        }
+        
+        @media (max-width: 768px) {
+            .certification-container {
+                flex-direction: column;
+            }
+            
+            .left-sidebar {
+                width: 100%;
+                border-radius: 8px 8px 0 0;
+            }
+            
+            .content-area {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="甘肃交通职业技术学院">
+                <div class="title">
+                    <div>扎根基西服务交通 六级联动·三融共生</div>
+                    <div>三优支撑高职就业育人创新实践模式</div>
+                </div>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="请输入搜索内容...">
+                <button>搜索</button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- 导航菜单 -->
+    <nav class="nav">
+        <div class="nav-content">
+            <ul>
+                <li><a href="index.html">网站首页</a></li>
+                <li><a href="application.html">成果申报书</a></li>
+                <li><a href="report.html">成果总结报告</a></li>
+                <li><a href="certification.html" style="background-color: #004080;">成果鉴定及应用证明</a></li>
+                <li><a href="materials.html">附件及支撑材料</a></li>
+                <li><a href="data.html">数据与资料来源</a></li>
+                <li><a href="about.html">学校简介</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- 面包屑导航 -->
+    <div class="breadcrumbs">
+        <a href="index.html">首页</a> &gt; 成果鉴定及应用证明
+    </div>
+    
+    <!-- 主要内容 -->
+    <div class="certification-container">
+        <!-- 左侧导航 -->
+        <div class="left-sidebar">
+            <div class="sidebar-title">成果鉴定及应用证明</div>
+            <ul class="sidebar-menu">
+                <li><a href="#" class="active">成果鉴定书</a></li>
+                <li><a href="#">用人单位证明</a></li>
+                <li><a href="#">学校应用证明</a></li>
+            </ul>
+        </div>
+        
+        <!-- 右侧内容 -->
+        <div class="content-area">
+            <h2 class="certificate-title">国家级职业教育教学成果鉴定书</h2>
+            
+            <!-- PDF查看器 -->
+            <div class="pdf-viewer">
+                <div class="pdf-toolbar">
+                    <button class="toolbar-btn" onclick="zoomOut()">-</button>
+                    <button class="toolbar-btn" onclick="zoomIn()">+</button>
+                    <span class="page-info">第 <span id="currentPage">1</span> 页，共 <span id="totalPages">1</span> 页</span>
+                </div>
+                <div class="pdf-container">
+                    <iframe id="pdfFrame" src="wj/获奖证明.pdf" width="100%" height="600px" style="border: none;"></iframe>
+                </div>
+            </div>
+            
+            <div class="certificate-content">
+                <h3 style="color: #003366; margin-top: 30px;">鉴定意见：</h3>
+                <p>该成果紧扣职业教育"就业育人"核心目标，针对学生职业能力与市场需求脱节的痛点，构建了"六级联动、三融共生、三优支撑"的高职就业育人创新实践模式。</p>
+                <p>成果通过"政府、行业、企业、学校、家庭、学生"六级联动机制，实现了资源共享、协同育人；通过"产教融合、科教融汇、职普融通"三融共生路径，打破了教育与产业的壁垒；通过"优质师资、优质课程、优质平台"三优支撑体系，保障了育人质量。</p>
+                <p>实践证明，该成果有效提升了学生的职业素养和就业竞争力，毕业生就业率保持在95%以上，用人单位满意度达98%，具有显著的推广应用价值。</p>
+                <p>经鉴定委员会评审，一致认为该成果达到国内领先水平，同意通过鉴定。</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 底部 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#">友情链接</a>
+                <a href="#">甘肃省人民政府</a>
+                <a href="#">甘肃省教育厅</a>
+                <a href="#">甘肃交通职业技术学院</a>
+                <a href="#">兰州交通大学</a>
+                <a href="#">兰州大学</a>
+                <a href="#">兰州理工大学</a>
+            </div>
+            <div class="footer-info">
+                <p>地址：兰州新区贺龙山大道北段615号 电话:0931-7672153 7672255(传真)</p>
+                <p>Copyright © 2026 All Rights Reserved. 甘肃交通职业技术学院 官网安全审核中 备案审核中 访问量:8523</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // PDF缩放功能
+        let zoomLevel = 1;
+        
+        function zoomIn() {
+            zoomLevel += 0.1;
+            document.getElementById('pdfFrame').style.transform = `scale(${zoomLevel})`;
+            document.getElementById('pdfFrame').style.transformOrigin = 'top left';
+        }
+        
+        function zoomOut() {
+            if (zoomLevel > 0.5) {
+                zoomLevel -= 0.1;
+                document.getElementById('pdfFrame').style.transform = `scale(${zoomLevel})`;
+                document.getElementById('pdfFrame').style.transformOrigin = 'top left';
+            }
+        }
+    </script>
+</body>
+</html>

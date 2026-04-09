@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>成果总结报告 - 甘肃交通职业技术学院</title>
+    <script src="js/main.js"></script>
+    <link href="css/css.css" rel="stylesheet">
+    <style>
+        .breadcrumbs {
+            background-color: #f5f5f5;
+            padding: 10px 20px;
+            font-size: 14px;
+            color: #666;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .breadcrumbs a {
+            color: #003366;
+            text-decoration: none;
+        }
+        
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+        
+        .report-container {
+            display: flex;
+            max-width: 1200px;
+            margin: 150px auto 20px;
+            padding: 0 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            min-height: 600px;
+        }
+        
+        .left-sidebar {
+            width: 250px;
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            border-radius: 8px 0 0 8px;
+        }
+        
+        .sidebar-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .sidebar-menu {
+            list-style: none;
+        }
+        
+        .sidebar-menu li {
+            margin-bottom: 10px;
+        }
+        
+        .sidebar-menu li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        .sidebar-menu li a:hover,
+        .sidebar-menu li a.active {
+            background-color: #004080;
+        }
+        
+        .content-area {
+            flex: 1;
+            padding: 30px;
+            overflow-y: auto;
+        }
+        
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #003366;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .report-section {
+            margin-bottom: 40px;
+        }
+        
+        .report-section h3 {
+            color: #003366;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #003366;
+        }
+        
+        .report-content {
+            line-height: 1.8;
+            margin-top: 20px;
+        }
+        
+        .report-content p {
+            margin-bottom: 15px;
+            text-indent: 2em;
+        }
+        
+        .report-frame {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .frame-card {
+            background-color: #f5f5f5;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .frame-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            border-color: #003366;
+        }
+        
+        .frame-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        
+        .frame-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #003366;
+            margin-bottom: 10px;
+        }
+        
+        .frame-desc {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+        }
+        
+        @media (max-width: 768px) {
+            .report-container {
+                flex-direction: column;
+            }
+            
+            .left-sidebar {
+                width: 100%;
+                border-radius: 8px 8px 0 0;
+            }
+            
+            .content-area {
+                padding: 20px;
+            }
+            
+            .report-steps {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .report-step {
+                width: 100%;
+                max-width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="甘肃交通职业技术学院">
+                <div class="title">
+                    <div>扎根基西服务交通 六级联动·三融共生</div>
+                    <div>三优支撑高职就业育人创新实践模式</div>
+                </div>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="请输入搜索内容...">
+                <button>搜索</button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- 导航菜单 -->
+    <nav class="nav">
+        <div class="nav-content">
+            <ul>
+                <li><a href="index.html">网站首页</a></li>
+                <li><a href="application.html">成果申报书</a></li>
+                <li><a href="report.html" style="background-color: #004080;">成果总结报告</a></li>
+                <li><a href="certification.html">成果鉴定及应用证明</a></li>
+                <li><a href="materials.html">附件及支撑材料</a></li>
+                <li><a href="data.html">数据与资料来源</a></li>
+                <li><a href="about.html">学校简介</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- 面包屑导航 -->
+    <div class="breadcrumbs">
+        <a href="index.html">首页</a> &gt; 成果总结报告
+    </div>
+    
+    <!-- 主要内容 -->
+    <div class="report-container">
+        <!-- 左侧导航 -->
+        <div class="left-sidebar">
+            <div class="sidebar-title">成果总结报告</div>
+            <ul class="sidebar-menu">
+                <li><a href="#" class="active">成果背景与问题</a></li>
+                <li><a href="#">成果创新与特点</a></li>
+                <li><a href="#">成果形成脉络</a></li>
+                <li><a href="#">成果应用推广效果</a></li>
+                <li><a href="#">主要做法与成效</a></li>
+            </ul>
+        </div>
+        
+        <!-- 右侧内容 -->
+        <div class="content-area">
+            <h2 class="section-title">成果总结报告</h2>
+            
+            <div class="report-section">
+                <h3>成果总结报告概述</h3>
+                <div class="report-content">
+                    <p>本成果总结报告全面阐述了"扎根西部、服务交通"高职就业育人创新实践模式的实施背景、创新理念、实践路径和显著成效，为西部职业教育改革发展提供了可复制、可推广的经验借鉴。</p>
+                </div>
+            </div>
+            
+            <div class="report-section">
+                <h3>成果总结报告框架</h3>
+                <div class="report-frame">
+                    <div class="frame-card">
+                        <div class="frame-icon">🎯</div>
+                        <div class="frame-title">成果背景与问题</div>
+                        <div class="frame-desc">分析高职教育面临的挑战与机遇</div>
+                    </div>
+                    <div class="frame-card">
+                        <div class="frame-icon">✨</div>
+                        <div class="frame-title">成果创新与特点</div>
+                        <div class="frame-desc">阐述创新理念与实施路径</div>
+                    </div>
+                    <div class="frame-card">
+                        <div class="frame-icon">📈</div>
+                        <div class="frame-title">成果形成脉络</div>
+                        <div class="frame-desc">展示成果发展历程</div>
+                    </div>
+                    <div class="frame-card">
+                        <div class="frame-icon">🚀</div>
+                        <div class="frame-title">成果应用推广效果</div>
+                        <div class="frame-desc">呈现应用成效与影响力</div>
+                    </div>
+                    <div class="frame-card">
+                        <div class="frame-icon">📊</div>
+                        <div class="frame-title">主要做法与成效</div>
+                        <div class="frame-desc">总结实施经验与成果</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="report-section">
+                <h3>成果背景与问题</h3>
+                <div class="report-content">
+                    <p>随着西部大开发和"一带一路"建设的深入推进，交通行业对高素质技术技能人才的需求日益增长。然而，传统高职教育存在人才培养与市场需求脱节、产教融合深度不够、就业指导体系不完善等问题，导致学生就业能力不足，企业用人需求难以满足。</p>
+                    <p>针对这些问题，甘肃交通职业技术学院联合行业企业，深入调研分析，提出了"六级联动、三融共生、三优支撑"的高职就业育人创新实践模式，旨在构建全方位、全过程、全覆盖的就业育人体系。</p>
+                </div>
+            </div>
+            
+            <div class="report-section">
+                <h3>成果创新与特点</h3>
+                <div class="report-content">
+                    <p>本成果的创新点主要体现在三个方面：一是构建了"政府、行业、企业、学校、家庭、学生"六级联动机制，实现了资源共享、协同育人；二是探索了"产教融合、科教融汇、职普融通"三融共生路径，打破了教育与产业的壁垒；三是建立了"优质师资、优质课程、优质平台"三优支撑体系，保障了育人质量。</p>
+                    <p>这些创新举措有效解决了高职教育中的关键问题，形成了具有西部特色的高职就业育人模式。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 底部 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#">友情链接</a>
+                <a href="#">甘肃省人民政府</a>
+                <a href="#">甘肃省教育厅</a>
+                <a href="#">甘肃交通职业技术学院</a>
+                <a href="#">兰州交通大学</a>
+                <a href="#">兰州大学</a>
+                <a href="#">兰州理工大学</a>
+            </div>
+            <div class="footer-info">
+                <p>地址：兰州新区贺龙山大道北段615号 电话:0931-7672153 7672255(传真)</p>
+                <p>Copyright © 2026 All Rights Reserved. 甘肃交通职业技术学院 官网安全审核中 备案审核中 访问量:8523</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
